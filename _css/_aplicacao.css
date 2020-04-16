@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap");
 
 * {
-    outline: 0;
+    outline: none;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    outline-offset: none;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -531,7 +532,7 @@ table {
 }
 
 #warp .col__conteudo .col__list .col__calen .lista__periodo .bt__check a {
-    background-image: url(tick.svg);
+    background-image: url("../_img/tick.svg");
 }
 
 #warp .col__conteudo .col__list .col__calen .lista__periodo li:first-child a {
@@ -546,7 +547,7 @@ table {
     background: #fff;
     display: table;
     width: 100%;
-    padding: 20px 36px 30px;
+    padding: 20px 36px 40px;
     border-radius: 0 0 10px 10px;
     font-size: 16px;
 }
@@ -557,6 +558,8 @@ table {
     font-size: 15px;
     font-style: normal;
     padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
 }
 
 #warp .col__conteudo .col__list .col__calen .datas__select .__left {
@@ -723,9 +726,13 @@ table {
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-#warp .col__conteudo .col__list .col__calen .datas__select__active {}
+#warp .col__conteudo .col__list .col__calen .__data {
+    display: table;
+    width: 100%;
+    padding-top: 21px;
+}
 
-#warp .col__conteudo .col__list .col__calen .datas__select__active h5 {
+#warp .col__conteudo .col__list .col__calen .__data h5 {
     text-align: center;
     font-weight: 300;
     font-size: 20px;
@@ -734,9 +741,14 @@ table {
     padding-bottom: 32px;
 }
 
-#warp .col__conteudo .col__list .col__calen .datas__select__active .bt__redefinir {
+#warp .col__conteudo .col__list .col__calen .__data .__left {
+    float: none;
+    margin: 0 auto;
+}
+
+#warp .col__conteudo .col__list .col__calen .__data .bt__redefinir {
     display: table;
-    margin: 0 auto 3vw;
+    margin: 0 auto 30px;
     color: #106EB0;
     font-weight: 800;
     font-style: normal;
